@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Styling</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: cornflowerblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            width: 30%;
+            margin: 10% auto;
+
+        }
+
+        form{
+            background-color: #fff;
+            padding: 10%;
+
+        }
+
+        .header{
+            margin-bottom: 10%;
+            text-align: center;
+        }
+
+        label{
+            display: block;
+            color: gray;
+            margin-bottom: 1%;
+        }
+        .inp{
+            margin: 3% auto;
+        }
+        button{
+            width: 100%;
+            display: block;
+            margin: auto;
+            background-color: rgba(12, 163, 93, 0.753);
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+            font-weight:700;
+            padding: 3%;
+            margin-top: 10%;
+            margin-bottom: 7%;
+        }
+        input{
+            width: 100%;
+            height: 1.9em;
+            border-radius: 3px;
+            border: 1px solid rgb(197, 197, 197);
+        }
+
+        .terms{
+            text-align: center;
+            font-size: .8em;
+            margin: 2%;
+        }
+
+        .qn{
+            text-align: center;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form action="" method="post">
+            <div class="header">
+                <h2>Sign Up</h2>
+                <p>It's Free and Only takes a minute</p>
+            </div>
+            <div class="inp firstname">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname">
+            </div>
+            <div class="secondname inp">
+                <label for="secondname">Last Name</label>
+                <input type="text" name="secondname" id="secondname">
+            </div>
+            <div class="email inp">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="password inp">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="cpassword inp">
+                <label for="cpassword">Confirm Password</label>
+                <input type="cpassword" name="cpassword" id="cpassword">
+            </div>
+
+            <button type="submit">Sign Up</button>
+
+            <div class="terms">
+                <p>By clicking the Sign Up button your agree our <br><a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></p>
+            </div>
+        </form>
+        
+        <p class="qn">Already have an account? <a href="#" class="login">Login Here</a></p>
+    </div>
+    
+</body>
+</html>
